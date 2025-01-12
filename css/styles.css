@@ -116,6 +116,10 @@ body {
   border: none;
   background-color: transparent;
 }
+.hero-btn-watch:hover,
+.hero-btn-watch:focus {
+  color: #173a56;
+}
 /* product */
 
 .product {
@@ -501,7 +505,7 @@ body {
 }
 .footer-btn:hover,
 .footer-btn:focus {
-  background-color: #252b42;
+  background-color: #173a56;
 }
 .footer-description {
   line-height: 1.875;
@@ -584,7 +588,7 @@ body {
 }
 .mechanism-btn:hover,
 .mechanism-btn:focus {
-  background-color: #252b42;
+  background-color: #173a56;
 }
 
 /* join */
@@ -655,6 +659,10 @@ body {
   background-color: #02897a;
   border-radius: 8px;
   border: none;
+}
+.enterprise-btn:hover,
+.enterprise-btn:focus {
+  background-color: #173a56;
 }
 /* effects */
 .effects {
