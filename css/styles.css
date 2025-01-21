@@ -1,3 +1,8 @@
+::before,
+*::after {
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -16,6 +21,7 @@ h4,
 p {
   margin: 0;
 }
+
 img {
   display: block;
 }
@@ -30,11 +36,20 @@ body {
   color: #22343d;
 }
 
+.container {
+  width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
 /* header */
 .header {
 }
 
 .nav {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -42,19 +57,29 @@ body {
   font-size: 30px;
   line-height: 0.93;
   color: #173a56;
+  padding: 22px 0;
+  margin-right: 237px;
 }
 
 .nav-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 .nav-link {
   line-height: 1.75;
+  padding: 26px 0;
+  display: block;
 }
 .current {
   font-weight: 600;
 }
 
 .header-list {
+  display: flex;
+  align-items: center;
+  gap: 21px;
 }
 
 .header-btn {
