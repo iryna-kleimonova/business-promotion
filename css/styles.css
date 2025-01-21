@@ -108,16 +108,31 @@ body {
 }
 /* hero */
 .hero {
+  padding-top: 25px;
+  padding-bottom: 112px;
+}
+.hero-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 35px;
 }
 .hero-title {
   font-size: 40px;
   line-height: 1.5;
+  max-width: 452px;
+  margin-bottom: 18px;
+  padding-top: 112px;
 }
 .hero-text {
   line-height: 1.55;
   font-size: 18px;
+  max-width: 465px;
+  margin-bottom: 45px;
 }
 .hero-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 .hero-btn {
   font-size: 16px;
@@ -129,6 +144,8 @@ body {
   background-color: #02897a;
   border-radius: 4px;
   border: none;
+  min-width: 178px;
+  height: 53px;
 }
 .hero-btn-start:hover,
 .hero-btn-start:focus {
@@ -140,26 +157,44 @@ body {
   color: #02897a;
   border: none;
   background-color: transparent;
+  width: 164px;
+  height: 23px;
 }
 .hero-btn-watch:hover,
 .hero-btn-watch:focus {
   color: #173a56;
 }
+
+.hero-img {
+  max-width: 100%;
+}
+
 /* product */
 
 .product {
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 .product-title {
   font-size: 32px;
   text-align: center;
+  margin-bottom: 50px;
+  max-width: 539px;
+  text-align: center;
 }
 .product-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  gap: 30px;
 }
 .product-item {
+  width: calc((100% - 90px) / 4);
 }
 .product-subtitle {
   font-weight: 600;
   font-size: 22px;
+  margin-bottom: 13px;
 }
 .product-text {
   line-height: 1.625;
@@ -178,10 +213,26 @@ body {
 
 /* management */
 .management {
+  padding-top: 41px;
+  padding-bottom: 41px;
 }
+
+.management-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 84px;
+}
+
+.management-description {
+  padding-top: 91px;
+  margin-bottom: 100px;
+}
+
 .management-title {
   font-weight: 600;
   font-size: 16px;
+  max-width: 224px;
+  margin-bottom: 25px;
 }
 .management-title-part {
   font-weight: 700;
@@ -189,6 +240,7 @@ body {
 }
 .management-text {
   line-height: 1.625;
+  margin-bottom: 30px;
 }
 .management-list {
 }
@@ -198,9 +250,11 @@ body {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.625;
+  margin-bottom: 12px;
 }
 .management-desc {
   line-height: 1.625;
+  margin-bottom: 25px;
 }
 
 /* customers */
