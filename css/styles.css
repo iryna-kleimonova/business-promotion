@@ -976,13 +976,19 @@ body {
 
 /* client */
 .client {
+  padding-top: 100px;
+  padding-bottom: 117px;
 }
 .client-title {
   font-size: 40px;
+  text-align: center;
 }
 .client-list {
+  display: flex;
+  gap: 64px;
 }
 .client-item {
+  width: calc((100% - 3 * 64px) / 4);
 }
 .client-link {
 }
@@ -990,50 +996,117 @@ body {
 /* product */
 .product {
   background-color: #f5f5f5;
+  padding-top: 24px;
+  padding-bottom: 68px;
 }
 .product-title {
   font-size: 34px;
   text-align: center;
+
+  margin-bottom: 50px;
 }
 .product-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 32px 37px 34px;
 }
 .product-item {
   border: 1px solid #dedede;
   border-radius: 10px;
+
+  width: calc((100% - 60px) / 3);
 }
+
+.product-icon-wrap {
+  border-radius: 19px;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 32px;
+}
+
+.first {
+  background-color: #02897a;
+}
+
+.second {
+  background-color: #4d8dff;
+}
+
+.third {
+  background-color: #f03e3d;
+}
+
 .product-subtitle {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.375;
   letter-spacing: 0em;
   text-align: center;
+
+  margin-bottom: 16px;
 }
 .product-text {
   line-height: 1.6875;
   letter-spacing: 0.01em;
   text-align: center;
+
+  width: 275px;
 }
 
 /* mechanism */
 .mechanism {
+  padding-top: 101px;
+  padding-bottom: 115px;
 }
 .mechanism-title {
   font-size: 34px;
   text-align: center;
+
+  margin-bottom: 73px;
 }
 .mechanism-list {
+  margin-bottom: 78px;
 }
-.mechanism-item {
+
+.mechanism-wrap {
+  display: flex;
+  gap: 89px;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mechanism-wrap-second {
+  display: flex;
+  gap: 89px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mechanism-desc-wrap {
+  width: 438px;
+}
+
+.mechanism-item:not(:last-child) {
+  margin-bottom: 100px;
 }
 .mechanism-num {
   font-weight: 500;
   font-size: 20px;
-  text-align: center;
 }
 .mechanism-subtitle {
   font-weight: 600;
   font-size: 24px;
-  text-align: center;
+  margin-bottom: 16px;
+  margin-top: 16px;
 }
 .mechanism-text {
   line-height: 1.75;
@@ -1043,9 +1116,15 @@ body {
   font-weight: 600;
   font-size: 18px;
   color: #fff;
+
   border-radius: 8px;
+  width: 224px;
+  height: 44px;
   background-color: #02897a;
   border: none;
+
+  display: block;
+  margin: 0 auto;
 }
 .mechanism-btn:hover,
 .mechanism-btn:focus {
@@ -1054,26 +1133,59 @@ body {
 
 /* join */
 .join {
+  padding-top: 35px;
+  padding-bottom: 195px;
   background: linear-gradient(180deg, #f5f5f5 0%, rgba(245, 245, 245, 0) 100%);
 }
 .join-title {
   font-size: 32px;
   text-align: center;
+  max-width: 537px;
+  margin: 0 auto 93px;
 }
+
 .join-list {
+  display: flex;
+  gap: 227px;
+  align-items: center;
+  justify-content: center;
 }
 .join-item {
 }
+
+.join-container {
+  border-radius: 100px;
+  padding: 30px 20px;
+  width: 150px;
+  height: 150px;
+
+  margin-bottom: 27px;
+}
+
+.join-container-first {
+  background-color: #ffefef;
+}
+
+.join-container-second {
+  background-color: #f2f6ff;
+}
+
 .join-subtitle {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.167;
   color: #000;
+
+  text-align: center;
+
+  margin-bottom: 16px;
 }
 .join-text {
   font-size: 18px;
   line-height: 1.78;
   text-align: center;
+
+  margin-bottom: 12px;
 }
 .join-desc {
   font-weight: 500;
@@ -1083,34 +1195,51 @@ body {
 
 /* price */
 
+.price-page {
+  padding-bottom: 150px;
+}
+
 .price-page-desc {
   font-weight: 600;
   font-size: 24px;
+  text-align: center;
 }
 .price-page-title {
   font-size: 40px;
   text-align: center;
+  margin-top: 32px;
+  margin-bottom: 16px;
 }
 .price-page-text {
   font-weight: 500;
   text-align: center;
+  margin-bottom: 49px;
 }
 
 /* enterprise */
 .enterprise {
+  padding-top: 53px;
+  padding-bottom: 51px;
   background: linear-gradient(180deg, #f6f6f6 0%, rgba(246, 246, 246, 0) 100%);
 }
 .enterprise-desc {
   font-weight: 600;
   font-size: 24px;
+  text-align: center;
 }
 .enterprise-title {
   font-weight: 700;
   font-size: 34px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  text-align: center;
 }
 .enterprise-text {
   font-weight: 400;
   font-size: 18px;
+  text-align: center;
+
+  margin-bottom: 32px;
 }
 .enterprise-btn {
   font-family: "Montserrat", sans-serif;
@@ -1119,7 +1248,12 @@ body {
   color: #fff;
   background-color: #02897a;
   border-radius: 8px;
+  width: 224px;
+  height: 44px;
   border: none;
+
+  display: block;
+  margin: 0 auto;
 }
 .enterprise-btn:hover,
 .enterprise-btn:focus {
@@ -1127,19 +1261,36 @@ body {
 }
 /* effects */
 .effects {
+  padding-top: 294px;
+  padding-bottom: 3px;
 }
 .effects-title {
   font-size: 34px;
+  text-align: center;
+
+  margin-bottom: 56px;
 }
+
+.effects-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  gap: 60px;
+}
+
 .effects-list {
+  width: 543px;
 }
-.effects-item {
+.effects-item:not(:last-child) {
+  margin-bottom: 32px;
 }
 .effects-subtitle {
   font-weight: 600;
   font-size: 24px;
-  text-align: center;
+  margin-bottom: 16px;
 }
+
 .effects-text {
   line-height: 1.75;
 }
@@ -1148,20 +1299,41 @@ body {
 
 /* question */
 .question {
+  padding-top: 3px;
+  padding-bottom: 150px;
 }
 .question-title {
   font-size: 34px;
+  text-align: center;
+  margin-bottom: 8px;
 }
 .question-text {
   font-size: 18px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 .question-list {
+  width: 920px;
+  margin: 0 auto;
 }
 .question-item {
+  border-bottom: 1px solid #e7e7e7;
 }
+
+.question-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
 .question-desc {
   font-weight: 500;
   font-size: 18px;
+  padding-bottom: 22px;
 }
+
+.question-desc-second {
+  padding-bottom: 14px;
+}
+
 .question-answear {
+  padding-bottom: 24px;
 }

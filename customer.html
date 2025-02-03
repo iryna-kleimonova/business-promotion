@@ -76,6 +76,11 @@
           <h2 class="product-title">Why Choose Product?</h2>
           <ul class="product-list">
             <li class="product-item">
+              <div class="product-icon-wrap first">
+                <svg class="product-icon" width="12" height="18">
+                  <use href="./images/icons.svg#icon-cursor"></use>
+                </svg>
+              </div>
               <h3 class="product-subtitle">Special Business</h3>
               <p class="product-text">
                 Product helps you see how many more days you need to work to
@@ -83,6 +88,11 @@
               </p>
             </li>
             <li class="product-item">
+              <div class="product-icon-wrap second">
+                <svg class="product-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-wave"></use>
+                </svg>
+              </div>
               <h3 class="product-subtitle">Instant Result</h3>
               <p class="product-text">
                 Product helps you see how many more days you need to work to
@@ -90,6 +100,11 @@
               </p>
             </li>
             <li class="product-item">
+              <div class="product-icon-wrap third">
+                <svg class="product-icon" width="16" height="18">
+                  <use href="./images/icons.svg#icon-heart"></use>
+                </svg>
+              </div>
               <h3 class="product-subtitle">Fastest way to organize</h3>
               <p class="product-text">
                 Product helps you see how many more days you need to work to
@@ -105,48 +120,61 @@
           <h2 class="mechanism-title">How Product Work?</h2>
           <ol class="mechanism-list">
             <li class="mechanism-item">
-              <span class="mechanism-num">STEP 1</span>
-              <h3 class="mechanism-subtitle">Apply for a product</h3>
-              <p class="mechanism-text">
-                Completing our easy step-by-step application form gives you
-                access to multiple business with multiple products. We analyse
-                your business through our proprietary credit analysis technology
-              </p>
-              <img
-                src="./images/mac1.png"
-                alt="laptop"
-                width="500"
-                height="280"
-              />
+              <div class="mechanism-wrap">
+                <div class="mechanism-desc-wrap">
+                  <span class="mechanism-num">STEP 1</span>
+                  <h3 class="mechanism-subtitle">Apply for a product</h3>
+                  <p class="mechanism-text">
+                    Completing our easy step-by-step application form gives you
+                    access to multiple business with multiple products. We
+                    analyse your business through our proprietary credit
+                    analysis technology
+                  </p>
+                </div>
+                <img
+                  src="./images/mac1.png"
+                  alt="laptop"
+                  width="500"
+                  height="280"
+                />
+              </div>
             </li>
             <li class="mechanism-item">
-              <span class="mechanism-num">STEP 2 </span>
-              <h3 class="mechanism-subtitle">Pay fully refundable</h3>
-              <p class="mechanism-text">
-                Product will contactting you instantly to receive payment of the
-                Application Fee. if no offer of product is available, your fee
-                will be fully refunded.
-              </p>
-              <img
-                src="./images/mac2.png"
-                alt="laptop"
-                width="500"
-                height="280"
-              />
+              <div class="mechanism-wrap-second">
+                <div class="mechanism-desc-wrap">
+                  <span class="mechanism-num">STEP 2 </span>
+                  <h3 class="mechanism-subtitle">Pay fully refundable</h3>
+                  <p class="mechanism-text">
+                    Product will contactting you instantly to receive payment of
+                    the Application Fee. if no offer of product is available,
+                    your fee will be fully refunded.
+                  </p>
+                </div>
+                <img
+                  src="./images/mac2.png"
+                  alt="laptop"
+                  width="500"
+                  height="280"
+                />
+              </div>
             </li>
             <li class="mechanism-item">
-              <span class="mechanism-num">STEP 3</span>
-              <h3 class="mechanism-subtitle">Completion</h3>
-              <p class="mechanism-text">
-                Product will continue to liase between borrower and manager to
-                procees and complete a quick and efficient settlement
-              </p>
-              <img
-                src="./images/mac3.png"
-                alt="laptop"
-                width="500"
-                height="280"
-              />
+              <div class="mechanism-wrap">
+                <div class="mechanism-desc-wrap">
+                  <span class="mechanism-num">STEP 3</span>
+                  <h3 class="mechanism-subtitle">Completion</h3>
+                  <p class="mechanism-text">
+                    Product will continue to liase between borrower and manager
+                    to procees and complete a quick and efficient settlement
+                  </p>
+                </div>
+                <img
+                  src="./images/mac3.png"
+                  alt="laptop"
+                  width="500"
+                  height="280"
+                />
+              </div>
             </li>
           </ol>
           <button class="mechanism-btn" type="button">
@@ -162,6 +190,7 @@
           </h2>
           <ul class="join-list">
             <li class="join-item">
+              <div class="join-container join-container-first"></div>
               <h3 class="join-subtitle">Business</h3>
               <p class="join-text">Cash Flow</p>
               <p class="join-text">Asset Backed</p>
@@ -169,6 +198,7 @@
               <p class="join-desc">Find the best business product</p>
             </li>
             <li class="join-item">
+              <div class="join-container join-container-second"></div>
               <h3 class="join-subtitle">Enterprise</h3>
               <p class="join-text">Site Acquisition</p>
               <p class="join-text">Bridge</p>
@@ -180,13 +210,16 @@
       </section>
       <!-- promo -->
       <section class="promo">
-        <div class="container">
-          <h2 hidden>Promo</h2>
-          <p class="promo-text">
-            Join 100 Compannies who boost their business with Product
-          </p>
-          <button class="promo-btn" type="button">Get This</button>
+        <div class="container promo-container">
+          <div class="promo-desc-container">
+            <h2 hidden>Promo</h2>
+            <p class="promo-text">
+              Join 100 Compannies who boost their business with Product
+            </p>
+            <button class="promo-btn" type="button">Get This</button>
+          </div>
           <img
+            class="promo-img"
             src="./images/graphics.png"
             alt="graphics"
             width="351"
@@ -272,18 +305,15 @@
             </p>
             <form class="footer-form">
               <label aria-label="footer-tel" class="footer-field"></label>
-              <div class="footer-icon-wrap">
-                <input
-                  type="tel"
-                  name="footer-tel"
-                  id="footer-tel"
-                  placeholder="Enter your phone number"
-                  class="footer-input"
-                />
-                <svg class="footer-submit-icon" width="18" height="28">
-                  <use href="./images/icons.svg#icon-mobile"></use>
-                </svg>
-              </div>
+
+              <input
+                type="tel"
+                name="footer-tel"
+                id="footer-tel"
+                placeholder=""
+                class="footer-input"
+              />
+
               <button class="footer-btn" type="submit">Sign up Now</button>
             </form>
           </div>
