@@ -982,6 +982,8 @@ body {
 .client-title {
   font-size: 40px;
   text-align: center;
+
+  margin-bottom: 50px;
 }
 .client-list {
   display: flex;
@@ -990,7 +992,14 @@ body {
 .client-item {
   width: calc((100% - 3 * 64px) / 4);
 }
+
+.client-item {
+}
+
 .client-link {
+}
+
+.client-icon {
 }
 
 /* product */
@@ -1010,13 +1019,19 @@ body {
   align-items: center;
   justify-content: center;
   gap: 30px;
-  padding: 32px 37px 34px;
 }
 .product-item {
   border: 1px solid #dedede;
   border-radius: 10px;
 
   width: calc((100% - 60px) / 3);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  padding: 32px 37px 34px;
 }
 
 .product-icon-wrap {
@@ -1058,7 +1073,7 @@ body {
   letter-spacing: 0.01em;
   text-align: center;
 
-  width: 275px;
+  max-width: 275px;
 }
 
 /* mechanism */
@@ -1076,12 +1091,12 @@ body {
   margin-bottom: 78px;
 }
 
+.mechanism-item {
+}
+
 .mechanism-wrap {
   display: flex;
   gap: 89px;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .mechanism-wrap-second {
@@ -1151,6 +1166,10 @@ body {
   justify-content: center;
 }
 .join-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .join-container {
@@ -1160,6 +1179,9 @@ body {
   height: 150px;
 
   margin-bottom: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .join-container-first {
@@ -1168,6 +1190,10 @@ body {
 
 .join-container-second {
   background-color: #f2f6ff;
+}
+
+.join-icon {
+  fill: #ffffff;
 }
 
 .join-subtitle {
