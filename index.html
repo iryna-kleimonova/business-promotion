@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- header -->
     <header class="header">
       <div class="container header-container">
         <nav class="nav">
@@ -62,7 +63,8 @@
       </div>
     </header>
     <main>
-      <!-- <section class="hero">
+      <!-- hero -->
+      <section class="hero">
         <div class="container hero-container">
           <div class="hero-descr">
             <h1 class="hero-title">Work at the speed of thought</h1>
@@ -78,28 +80,43 @@
               </li>
               <li>
                 <button class="hero-btn hero-btn-watch" type="button">
+                  <svg class="hero-btn-icon" width="20" height="18">
+                    <use href="./images/icons.svg#icon-watch"></use>
+                  </svg>
                   Watch the Video
                 </button>
               </li>
             </ul>
           </div>
-          <img
-            class="hero-img"
-            src="./images/hero-img.png"
-            alt="people"
-            width="610"
-            height="555"
-          />
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="./images/hero-img.png 1x, ./images/hero-img-2x.png 2x"
+            />
+            <source
+              media="(max-width: 1199px)"
+              srcset="
+                ./images/hero-img-mob.png    1x,
+                ./images/hero-img-mob-2x.png 2x
+              "
+            />
+            <img
+              class="hero-img"
+              src="./images/hero-img.png"
+              alt="people"
+              width="610"
+            />
+          </picture>
         </div>
-      </section> -->
+      </section>
       <!-- products -->
-      <!-- <section class="products">
+      <section class="products">
         <div class="container">
           <h2 class="products-title">Product was Built Specifically for You</h2>
           <ul class="products-list">
             <li class="products-item">
               <div class="product-icon-wrap">
-                <svg class="product-icon" height="18" width="11">
+                <svg class="product-icon" height="18" width="12">
                   <use href="./images/icons.svg#icon-cursor"></use>
                 </svg>
               </div>
@@ -130,7 +147,6 @@
                 The Myspace page defines the individual.
               </p>
             </li>
-
             <li class="products-item">
               <div class="product-icon-wrap product-icon-wrap-fourth">
                 <svg class="product-icon" height="18" width="14">
@@ -145,9 +161,9 @@
           </ul>
           <button class="products-btn" type="button">SIGN UP NOW</button>
         </div>
-      </section> -->
+      </section>
       <!-- management -->
-      <!-- <section class="management">
+      <section class="management">
         <div class="container management-container">
           <div class="management-description">
             <h2 class="management-title">
@@ -162,7 +178,7 @@
             <ul class="management-list">
               <li class="management-item">
                 <h3 class="management-subtitle">Accessory makers</h3>
-                <p class="management-desk">
+                <p class="management-desc">
                   While most people enjoy casino gambling, sports betting,
                   lottery and bingo playing for the fun
                 </p>
@@ -176,14 +192,29 @@
               </li>
             </ul>
           </div>
-          <img
-            src="./images/management-img.png"
-            alt="documents"
-            width="540"
-            height="500"
-          />
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/management-img.png    1x,
+                ./images/management-img-2x.png 2x
+              "
+            />
+            <source
+              media="(max-width: 1199px)"
+              srcset="
+                ./images/management-mob.png    1x,
+                ./images/management-mob-2x.png 2x
+              "
+            />
+            <img
+              src="./images/management-img.png"
+              alt="documents"
+              width="540"
+            />
+          </picture>
         </div>
-      </section> -->
+      </section>
       <!-- customer -->
       <!-- <section class="customer">
         <div class="container customer-container">
