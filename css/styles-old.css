@@ -490,7 +490,8 @@ body {
   align-items: center;
   justify-content: center;
 }
-.process-item-reverse {
+.process-item-second,
+.process-item-third {
   flex-direction: row-reverse;
 }
 
