@@ -349,45 +349,78 @@
           </p>
           <ul class="process-list">
             <li class="process-item">
-              <img
-                src="./images/avatar1.png"
-                alt="woman"
-                width="98"
-                height="98"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/avatar1.png 1x, ./images/avatar1-2x.png 2x"
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./images/avatar1-mob.png    1x,
+                    ./images/avatar1-mob-2x.png 2x
+                  "
+                />
+                <img src="./images/avatar1.png" alt="woman" width="98" />
+              </picture>
               <div class="process-text-wrap">
                 <p class="process-desc">I can take care of your pitch</p>
               </div>
             </li>
             <li class="process-item process-item-second">
-              <img
-                src="./images/avatar3.png"
-                alt="man"
-                width="98"
-                height="98"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/avatar3.png 1x, ./images/avatar3-2x.png 2x"
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./images/avatar3-mob.png    1x,
+                    ./images/avatar3-mob-2x.png 2x
+                  "
+                />
+                <img src="./images/avatar3.png" alt="man" width="98" />
+              </picture>
               <div class="process-text-wrap">
                 <p class="process-desc">I can design you website</p>
               </div>
             </li>
             <li class="process-item process-item-third">
-              <img
-                src="./images/avatar4.png"
-                alt="man"
-                width="98"
-                height="98"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/avatar4.png 1x, ./images/avatar4-2x.png 2x"
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./images/avatar4-mob.png    1x,
+                    ./images/avatar4-mob-2x.png 2x
+                  "
+                />
+                <img src="./images/avatar4.png" alt="man" width="98" />
+              </picture>
               <div class="process-text-wrap">
                 <p class="process-desc">I can help marketing strategy</p>
               </div>
             </li>
             <li class="process-item process-item-fourth">
-              <img
-                src="./images/avatar2.png"
-                alt="woman"
-                width="98"
-                height="98"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/avatar2.png 1x, ./images/avatar2-2x.png 2x"
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./images/avatar2-mob.png    1x,
+                    ./images/avatar2-mob-2x.png 2x
+                  "
+                />
+                <img src="./images/avatar2.png" alt="woman" width="98" />
+              </picture>
+
               <div class="process-text-wrap">
                 <p class="process-desc">I can prototype your app</p>
               </div>
@@ -397,7 +430,7 @@
         </div>
       </section>
       <!-- contents strategies -->
-      <!-- <section class="contents">
+      <section class="contents">
         <div class="container">
           <h2 class="contents-title">Contents Strategies</h2>
           <p class="contents-text">
@@ -407,6 +440,7 @@
           <ul class="contents-list">
             <li class="contents-item">
               <img
+                srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
                 src="./images/img1.jpg"
                 alt="office"
                 width="350"
@@ -424,6 +458,7 @@
             </li>
             <li class="contents-item">
               <img
+                srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"
                 src="./images/img2.jpg"
                 alt="people"
                 width="350"
@@ -441,6 +476,7 @@
             </li>
             <li class="contents-item">
               <img
+                srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"
                 class="contents-img"
                 src="./images/img3.jpg"
                 alt="city"
@@ -459,9 +495,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- price -->
-      <!-- <section class="price">
+      <section class="price">
         <div class="container price-container">
           <h2 class="price-title">Price Table</h2>
           <p class="price-text">We offer competitive price</p>
@@ -547,9 +583,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- clients -->
-      <!-- <section class="clients">
+      <section class="clients">
         <div class="container">
           <h2 class="clients-title">What Clients Say</h2>
           <p class="clients-text">
@@ -591,6 +627,7 @@
               </p>
               <div class="clients-wrap">
                 <img
+                  srcset="./images/ellipse1.png 1x, ./images/ellipse1-2x.png 2x"
                   src="./images/ellipse1.png"
                   alt="woman"
                   width="50"
@@ -636,6 +673,7 @@
               </p>
               <div class="clients-wrap">
                 <img
+                  srcset="./images/ellipse2.png 1x, ./images/ellipse2-2x.png 2x"
                   src="./images/ellipse2.png"
                   alt="man"
                   width="50"
@@ -681,6 +719,7 @@
               </p>
               <div class="clients-wrap">
                 <img
+                  srcset="./images/ellipse3.png 1x, ./images/ellipse3-2x.png 2x"
                   src="./images/ellipse3.png"
                   alt="man"
                   width="50"
@@ -694,9 +733,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- promo -->
-      <!-- <section class="promo">
+      <section class="promo">
         <div class="container promo-container">
           <div class="promo-desc-container">
             <h2 hidden>Promo</h2>
@@ -713,10 +752,10 @@
             height="331"
           />
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- footer -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
           <div class="footer-logo-wrap">
@@ -812,6 +851,6 @@
           Made With Love By Figmaland All Right Reserved
         </p>
       </div>
-    </footer> -->
+    </footer>
   </body>
 </html>
